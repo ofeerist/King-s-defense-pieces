@@ -17,6 +17,7 @@ namespace Assets.Scripts.Wave
 
         public int KeyID { get; private set; }
         public event Action<PawnAnimator> OnAnimationFinished;
+
         public void SetFactory(PawnFactory factory)
         {
             _factory = factory;
