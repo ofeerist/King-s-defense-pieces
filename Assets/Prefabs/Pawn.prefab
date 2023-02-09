@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5927117550241576154, guid: a2c749609dba57546bd48506b4c51c2a, type: 3}
+  - {fileID: 2100000, guid: 2dcce7fa0d12a12489d2a2afa92ce8e9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -139,4 +139,3 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _particleSystem: {fileID: 0}
