@@ -30,8 +30,6 @@ namespace Assets.Scripts.Wave
 
             var _transform = transform;
 
-            //_transform.rotation = Quaternion.LookRotation(position - _transform.position);
-            
             _serial.Disposable = Observable.FromMicroCoroutine(AnimationLoop).Subscribe(x =>
             {
                 OnAnimationFinished?.Invoke(this);

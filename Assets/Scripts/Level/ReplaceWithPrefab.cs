@@ -3,6 +3,8 @@ using UniRx;
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
+
 namespace Assets.Scripts.Level
 {
     [ExecuteInEditMode]
@@ -33,3 +35,5 @@ namespace Assets.Scripts.Level
         }
     }
 }
+
+#endif
