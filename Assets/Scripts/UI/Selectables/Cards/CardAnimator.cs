@@ -2,6 +2,7 @@
 using System.Collections;
 using UniRx;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Assets.Scripts.UI.Selectables.Cards
@@ -28,8 +29,14 @@ namespace Assets.Scripts.UI.Selectables.Cards
 
         private bool _isSelected;
 
+        public bool IsHand { get; set; }
+
+        public UnityEvent OnShowSelf;
+
         private void Start()
         {
+            IsHand = true;
+
             _startSize = new Vector2(_layoutElement.preferredWidth, _layoutElement.preferredHeight);
             _targetSize = _startSize * _targetMultiplier;
 
@@ -41,9 +48,21 @@ namespace Assets.Scripts.UI.Selectables.Cards
 
             Observable.FromMicroCoroutine(ShowSelf).Subscribe(x =>
             {
+                OnShowSelf?.Invoke();
+
                 Observable.EveryUpdate().Subscribe(x =>
                 {
                     var speed = _lerpSpeed * Time.deltaTime;
+
+                    if (!IsHand)
+                    {
+                        LerpLayoutSize(_layoutElement, Vector2.zero, speed);
+
+                        _rectToScale.localScale =
+                            Vector3.Lerp(_rectToScale.localScale, _startScale, speed);
+
+                        return;
+                    }
 
                     if (_isSelected)
                     {

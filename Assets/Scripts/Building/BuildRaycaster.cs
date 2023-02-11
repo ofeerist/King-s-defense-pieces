@@ -18,19 +18,17 @@ namespace Assets.Scripts.Building
         {
             _buildAction.Enable();
             _mousePositionAction.Enable();
-
-            _buildAction.performed += (arg) => Build(null);
         }
 
-        public void Build(Card card)
+        public Vector3 RaycastBlock(Vector2 screenPoint)
         {
-            var ray = _camera.ScreenPointToRay(_mousePositionAction.ReadValue<Vector2>());
+            var ray = _camera.ScreenPointToRay(screenPoint);
             var results = Physics.RaycastAll(ray, Mathf.Infinity, _buildMask);
             var orderedByProximity = results.OrderBy(c => (_camera.transform.position - c.transform.position).sqrMagnitude).ToArray();
 
-            if (orderedByProximity.Length == 0) return;
+            if (orderedByProximity.Length == 0) return Vector3.zero;
 
-            _rectTransform.position = _camera.WorldToScreenPoint(orderedByProximity[0].collider.gameObject.transform.position);
+            return _camera.WorldToScreenPoint(orderedByProximity[0].collider.gameObject.transform.position);
         }
     }
 }
