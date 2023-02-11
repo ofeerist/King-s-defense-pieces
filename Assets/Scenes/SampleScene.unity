@@ -22968,6 +22968,23 @@ MonoBehaviour:
       m_Action: Mouse
       m_Flags: 0
     m_Flags: 0
+  _selectAction:
+    m_Name: Select
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 880ddb5e-e79d-484b-9556-631cba087a89
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 939d9d58-d6c6-4284-bdcf-143ec59cd7ac
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Select
+      m_Flags: 0
+    m_Flags: 0
 --- !u!222 &1439966027
 CanvasRenderer:
   m_ObjectHideFlags: 0
