@@ -5,6 +5,7 @@ namespace Assets.Scripts.UI.Selectables.Cards
 {
     internal class CardIsoAnimator : MonoBehaviour
     {
+        [SerializeField] private CardDragNDrop _cardDragNDrop;
         [SerializeField] private CardAnimator _cardAnimator;
 
         [SerializeField] private float _lerpSpeed;
@@ -44,8 +45,6 @@ namespace Assets.Scripts.UI.Selectables.Cards
             {
                 Main();
             });
-
-            
         }
 
         private void Main() 
@@ -61,7 +60,7 @@ namespace Assets.Scripts.UI.Selectables.Cards
             {
                 var speed = _lerpSpeed * Time.deltaTime;
 
-                if (_cardAnimator.IsHand)
+                if (!_cardDragNDrop.IsIso)
                 {
                     _cardRectTransform.rotation =
                         Quaternion.Lerp(_cardRectTransform.rotation, Quaternion.Euler(_startRotation), speed);

@@ -29,17 +29,12 @@ namespace Assets.Scripts.UI.Selectables.Cards
             {
                 if (_permantSelect) return;
 
-                if (TryRaycastSelectable(out var selectable))
-                {
-                    Deselect(_currentSelectable);
-
-                    Select(selectable);
-
-                    return;
-                }
-
                 Deselect(_currentSelectable);
 
+                if (TryRaycastSelectable(out var selectable))
+                {
+                    Select(selectable);
+                }
             }).AddTo(this);
 
             _selectAction.performed += (arg) =>

@@ -85,6 +85,7 @@ MonoBehaviour:
   _rectTransform: {fileID: 686454706345291838}
   _cardAnimator: {fileID: 2762877845851430990}
   _layoutElement: {fileID: 6091910554154173254}
+  _lerpSpeed: 10
 --- !u!114 &6091910554154173256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302a6c90e2406ef4690b8c2b80b1f2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cardDragNDrop: {fileID: 6091910554154173255}
   _cardAnimator: {fileID: 2762877845851430990}
   _lerpSpeed: 10
   _cardRectTransform: {fileID: 686454706345291838}
@@ -321,6 +323,9 @@ MonoBehaviour:
   _startAnimationDuration: 1
   _targetMultiplier: 1.2
   _lerpSpeed: 10
+  OnShowSelf:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!222 &1490385337038380597
 CanvasRenderer:
   m_ObjectHideFlags: 0
