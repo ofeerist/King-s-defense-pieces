@@ -82,10 +82,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _buildRaycaster: {fileID: 0}
+  _raycaster: {fileID: 0}
+  _cardHolderGameObject: {fileID: 0}
+  _cardPrefabParent: {fileID: 7089129683391228842}
+  _gridHolder: {fileID: 0}
+  _cardHolder: {fileID: 0}
   _rectTransform: {fileID: 686454706345291838}
   _cardAnimator: {fileID: 2762877845851430990}
   _layoutElement: {fileID: 6091910554154173254}
   _lerpSpeed: 10
+  _mousePosition:
+    m_Name: Mouse Position
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0947f1be-a433-41f1-862e-09d256697f43
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 1ce735e1-8362-43a1-8813-c0021bccf2aa
+      m_Path: <Mouse>/position
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Mouse Position
+      m_Flags: 0
+    m_Flags: 0
 --- !u!114 &6091910554154173256
 MonoBehaviour:
   m_ObjectHideFlags: 0

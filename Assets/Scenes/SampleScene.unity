@@ -1020,9 +1020,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
+      propertyPath: _raycaster
+      value: 
+      objectReference: {fileID: 607248383}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolder
+      value: 
+      objectReference: {fileID: 815287369}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _gridHolder
+      value: 
+      objectReference: {fileID: 1295818390}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
       propertyPath: _buildRaycaster
       value: 
       objectReference: {fileID: 607248387}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolderGameObject
+      value: 
+      objectReference: {fileID: 1404140961}
     - target: {fileID: 7089129683391228842, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1545,7 +1565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &109911856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5114,7 +5134,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.35364068, y: 0.35353842, z: -0.14648278, w: 0.85351723}
+  m_LocalRotation: {x: 0.35364068, y: 0.35353842, z: -0.14648277, w: 0.8535173}
   m_LocalPosition: {x: 5.74, y: 10.4, z: 4.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10882,6 +10902,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1439966025}
+  - {fileID: 1295818390}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13817,7 +13838,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757399228}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89020908ae5ebf74388ca3cf522224b0, type: 3}
   m_Name: 
@@ -14773,7 +14794,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815287368}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -14789,7 +14810,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -480}
+  m_AnchoredPosition: {x: 0, y: -500}
   m_SizeDelta: {x: 0, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &815287371
@@ -15544,9 +15565,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
+      propertyPath: _raycaster
+      value: 
+      objectReference: {fileID: 607248383}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolder
+      value: 
+      objectReference: {fileID: 815287369}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _gridHolder
+      value: 
+      objectReference: {fileID: 1295818390}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
       propertyPath: _buildRaycaster
       value: 
       objectReference: {fileID: 607248387}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolderGameObject
+      value: 
+      objectReference: {fileID: 1404140961}
     - target: {fileID: 7089129683391228842, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
       propertyPath: m_Pivot.x
@@ -18430,9 +18471,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
+      propertyPath: _raycaster
+      value: 
+      objectReference: {fileID: 607248383}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolder
+      value: 
+      objectReference: {fileID: 815287369}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _gridHolder
+      value: 
+      objectReference: {fileID: 1295818390}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
       propertyPath: _buildRaycaster
       value: 
       objectReference: {fileID: 607248387}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolderGameObject
+      value: 
+      objectReference: {fileID: 1404140961}
     - target: {fileID: 7089129683391228842, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
       propertyPath: m_Pivot.x
@@ -22093,6 +22154,42 @@ MonoBehaviour:
   _graphicTransform: {fileID: 2102750085}
   _targetPosition: {x: 0, y: 0.3, z: 0}
   _animationDuration: 0.1
+--- !u!1 &1295818389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295818390}
+  m_Layer: 5
+  m_Name: GridHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1295818390
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295818389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 607248386}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1297191494
 GameObject:
   m_ObjectHideFlags: 0
@@ -23127,6 +23224,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370017426}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1404140961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404140962}
+  - component: {fileID: 1404140964}
+  - component: {fileID: 1404140963}
+  m_Layer: 5
+  m_Name: CardUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1404140962
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404140961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1439966025}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -420}
+  m_SizeDelta: {x: 0, y: 250}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1404140963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404140961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.01, g: 0.01, b: 0.01, a: 0.011764706}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1404140964
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404140961}
+  m_CullTransparentMesh: 1
 --- !u!1 &1405353117
 GameObject:
   m_ObjectHideFlags: 0
@@ -24020,6 +24193,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1404140962}
   - {fileID: 815287369}
   m_Father: {fileID: 607248386}
   m_RootOrder: -1
@@ -25238,9 +25412,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
+      propertyPath: _raycaster
+      value: 
+      objectReference: {fileID: 607248383}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolder
+      value: 
+      objectReference: {fileID: 815287369}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _gridHolder
+      value: 
+      objectReference: {fileID: 1295818390}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
       propertyPath: _buildRaycaster
       value: 
       objectReference: {fileID: 607248387}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolderGameObject
+      value: 
+      objectReference: {fileID: 1404140961}
     - target: {fileID: 7089129683391228842, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
       propertyPath: m_Pivot.x
@@ -29762,9 +29956,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
+      propertyPath: _raycaster
+      value: 
+      objectReference: {fileID: 607248383}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolder
+      value: 
+      objectReference: {fileID: 815287369}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _gridHolder
+      value: 
+      objectReference: {fileID: 1295818390}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
       propertyPath: _buildRaycaster
       value: 
       objectReference: {fileID: 607248387}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolderGameObject
+      value: 
+      objectReference: {fileID: 1404140961}
     - target: {fileID: 7089129683391228842, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
       propertyPath: m_Pivot.x
@@ -36442,16 +36656,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 3457455531738932937, guid: 50b48846392d94748b166918a3fe5e34,
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: _raycaster
+      value: 
+      objectReference: {fileID: 607248383}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolder
+      value: 
+      objectReference: {fileID: 815287369}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _gridHolder
+      value: 
+      objectReference: {fileID: 1295818390}
     - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
       propertyPath: _buildRaycaster
       value: 
       objectReference: {fileID: 607248387}
+    - target: {fileID: 6091910554154173255, guid: 50b48846392d94748b166918a3fe5e34,
+        type: 3}
+      propertyPath: _cardHolderGameObject
+      value: 
+      objectReference: {fileID: 1404140961}
     - target: {fileID: 7089129683391228842, guid: 50b48846392d94748b166918a3fe5e34,
         type: 3}
       propertyPath: m_Pivot.x
