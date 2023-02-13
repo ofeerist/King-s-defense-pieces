@@ -30,14 +30,24 @@ namespace Assets.Scripts.UI.Cards.States
 
         protected override void OnEnter()
         {
-            _serialDisposable.Disposable = Observable.FromMicroCoroutine(Hover).Subscribe();
+            StartHover();
         }
         protected override void OnExit()
+        {
+            StartUnHover();
+        }
+
+        public void StartHover()
+        {
+            _serialDisposable.Disposable = Observable.FromMicroCoroutine(Hover).Subscribe();
+        }
+
+        public void StartUnHover()
         {
             _serialDisposable.Disposable = Observable.FromMicroCoroutine(UnHover).Subscribe();
         }
 
-        private IEnumerator Hover()
+        public IEnumerator Hover()
         {
             var info = _animator.AnimationLinks;
 
@@ -64,7 +74,7 @@ namespace Assets.Scripts.UI.Cards.States
             info.GraphicTransform.localScale = targetScale;
         }
 
-        private IEnumerator UnHover()
+        public IEnumerator UnHover()
         {
             var info = _animator.AnimationLinks;
 

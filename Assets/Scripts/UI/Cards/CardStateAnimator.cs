@@ -8,6 +8,10 @@ namespace Assets.Scripts.UI.Cards
     [System.Serializable]
     public class AnimationLinks
     {
+        public RectTransform CardsLayout;
+
+        [Space]
+
         public RectTransform LayoutTransform;
         public LayoutElement LayoutLayoutElement;
 
@@ -21,16 +25,20 @@ namespace Assets.Scripts.UI.Cards
     {
         public BaseHandCardState StillState;
         public CardHoverState HoverState;
+        public CardDragState DragState;
         public void InitializeStates(CardStateAnimator animator)
         {
             StillState.Initialize(animator);
             HoverState.Initialize(animator);
+            DragState.Initialize(animator);
         }
     }
 
     public class CardStateAnimator : MonoBehaviour
     {
         public readonly StateMachine StateMachine = new();
+
+        public State CurrentState => StateMachine.CurrentState;
 
         [SerializeField] private AnimationLinks _animationLinks;
         public AnimationLinks AnimationLinks { get => _animationLinks; }
