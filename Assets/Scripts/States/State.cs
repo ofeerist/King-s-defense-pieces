@@ -1,8 +1,10 @@
 ﻿using System;
+using UnityEngine;
 
-namespace Assets.Scripts.StateMachine
+namespace Assets.Scripts.States
 {
-    public class State
+    [Serializable]
+    public class State 
     {
         public event Action OnStateEnter;
         public event Action OnStateExit;

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Assets.Scripts.StateMachine
+namespace Assets.Scripts.States
 {
-    internal class StateMachine
+    public class StateMachine
     {
         public State CurrentState { get; private set; }
 
@@ -11,6 +11,7 @@ namespace Assets.Scripts.StateMachine
         public void Initialize(State startingState)
         {
             CurrentState = startingState;
+
             startingState.Enter();
         }
 
