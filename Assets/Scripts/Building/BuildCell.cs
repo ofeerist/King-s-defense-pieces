@@ -23,6 +23,8 @@ namespace Assets.Scripts.Building
 
         public void Deselect()
         {
+            if (!_isSelected) return;
+
             _isSelected = false;
 
             _serialDisposable.Disposable?.Dispose();
@@ -36,6 +38,8 @@ namespace Assets.Scripts.Building
 
         public void Select()
         {
+            if (_isSelected) return;
+
             _isSelected = true;
 
             _serialDisposable.Disposable?.Dispose();

@@ -9,6 +9,7 @@ namespace Assets.Scripts.UI.Cards
     public class AnimationLinks
     {
         public RectTransform CardsLayout;
+        public GameObject CardsLayoutMask;
 
         [Space]
 
