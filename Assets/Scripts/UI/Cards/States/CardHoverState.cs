@@ -31,10 +31,12 @@ namespace Assets.Scripts.UI.Cards.States
         protected override void OnEnter()
         {
             StartHover();
+            LerpWidth = false;
         }
         protected override void OnExit()
         {
             StartUnHover();
+            LerpWidth = true;
         }
 
         public void StartHover()
