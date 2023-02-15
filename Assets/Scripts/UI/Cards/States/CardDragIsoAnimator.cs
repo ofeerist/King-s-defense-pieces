@@ -34,8 +34,11 @@ namespace Assets.Scripts.UI.Cards.States
         [Header("Text Size")]
 
         [SerializeField] private RectTransform _textRectTransform;
+        [SerializeField] private RectTransform _text1RectTransform;
         [SerializeField] private Vector2 _targetTextPosition;
+        [SerializeField] private Vector2 _targetText1Position;
         private Vector2 _startTextPosition;
+        private Vector2 _startText1Position;
 
         private void Start()
         {
@@ -44,6 +47,7 @@ namespace Assets.Scripts.UI.Cards.States
             _startIconSize = _iconRectTransform.sizeDelta;
             _startIconPosition = _iconRectTransform.anchoredPosition;
             _startTextPosition = _textRectTransform.anchoredPosition;
+            _startText1Position = _text1RectTransform.anchoredPosition;
 
             Observable.EveryUpdate().Subscribe(x =>
             {
@@ -65,6 +69,9 @@ namespace Assets.Scripts.UI.Cards.States
 
                     _textRectTransform.anchoredPosition =
                         Vector2.Lerp(_textRectTransform.anchoredPosition, _startTextPosition, speed);
+
+                    _text1RectTransform.anchoredPosition =
+                        Vector2.Lerp(_text1RectTransform.anchoredPosition, _startText1Position, speed);
                 }
                 else
                 {
@@ -82,6 +89,9 @@ namespace Assets.Scripts.UI.Cards.States
 
                     _textRectTransform.anchoredPosition =
                         Vector2.Lerp(_textRectTransform.anchoredPosition, _targetTextPosition, speed);
+
+                    _text1RectTransform.anchoredPosition =
+                        Vector2.Lerp(_text1RectTransform.anchoredPosition, _targetText1Position, speed);
                 }
 
             }).AddTo(this);

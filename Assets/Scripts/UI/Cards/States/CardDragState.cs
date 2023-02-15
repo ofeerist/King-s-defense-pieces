@@ -79,6 +79,8 @@ namespace Assets.Scripts.UI.Cards.States
 
                 if (!IsRaycastCardHolder(mousePosition))
                 {
+                    _animator.AnimationLinks.CardsLayoutSelectable.Deselect();
+
                     if (IsIso)
                     {
                         Select(cell);
@@ -98,6 +100,8 @@ namespace Assets.Scripts.UI.Cards.States
                 }
                 else
                 {
+                    _animator.AnimationLinks.CardsLayoutSelectable.Select();
+
                     _animator.AnimationLinks.LayoutLayoutElement.preferredWidth =
                             Mathf.Lerp(_animator.AnimationLinks.LayoutLayoutElement.preferredWidth, _startWidth, _lerpSpeed * Time.deltaTime);
 
@@ -172,6 +176,8 @@ namespace Assets.Scripts.UI.Cards.States
 
         protected override void OnExit()
         {
+            _animator.AnimationLinks.CardsLayoutSelectable.Select();
+
             Deselect(_currentCellSelectable);
 
             _serialDisposable.Disposable.Dispose();

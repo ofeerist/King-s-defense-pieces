@@ -14,9 +14,11 @@ namespace Assets.Scripts.UI.Cards
         {
             Observable.EveryUpdate().Subscribe(x =>
             {
-                _self.sizeDelta = new Vector2(
-                    Mathf.Lerp(_self.sizeDelta.x, _target.sizeDelta.x, _lerpSpeed * Time.deltaTime),
-                    _self.sizeDelta.y);
+                _self.sizeDelta = Vector3.Lerp(_self.sizeDelta, _target.sizeDelta,
+                    _lerpSpeed * Time.deltaTime);
+
+                _self.position = Vector3.Lerp(_self.position, _target.position, 
+                    _lerpSpeed * Time.deltaTime);
             }).AddTo(this);
         }
     }

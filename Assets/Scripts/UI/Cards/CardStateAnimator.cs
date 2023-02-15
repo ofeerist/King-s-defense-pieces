@@ -10,6 +10,7 @@ namespace Assets.Scripts.UI.Cards
     {
         public RectTransform CardsLayout;
         public GameObject CardsLayoutMask;
+        public CardsLayout CardsLayoutSelectable;
 
         [Space]
 
