@@ -93,13 +93,13 @@ namespace Assets.Scripts.UI.Cards.States
                         _animator.AnimationLinks.GraphicTransform.anchoredPosition += deltaPosition;
                     }
 
-                    _animator.AnimationLinks.LayoutLayoutElement.preferredWidth =
-                            Mathf.Lerp(_animator.AnimationLinks.LayoutLayoutElement.preferredWidth, 0, _lerpSpeed * Time.deltaTime);
+                    //_animator.AnimationLinks.LayoutLayoutElement.preferredWidth =
+                    //        Mathf.Lerp(_animator.AnimationLinks.LayoutLayoutElement.preferredWidth, 0, _lerpSpeed * Time.deltaTime);
                 }
                 else
                 {
-                    _animator.AnimationLinks.LayoutLayoutElement.preferredWidth =
-                            Mathf.Lerp(_animator.AnimationLinks.LayoutLayoutElement.preferredWidth, _startWidth, _lerpSpeed * Time.deltaTime);
+                    //_animator.AnimationLinks.LayoutLayoutElement.preferredWidth =
+                    //        Mathf.Lerp(_animator.AnimationLinks.LayoutLayoutElement.preferredWidth, _startWidth, _lerpSpeed * Time.deltaTime);
 
                     _animator.AnimationLinks.GraphicTransform.anchoredPosition += deltaPosition;
 

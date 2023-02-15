@@ -24,6 +24,8 @@ namespace Assets.Scripts.Level
 
         public void PlayParticle()
         {
+            return;
+
             var particle = Instantiate(_particleSystem, transform);
 
             particle.Play();
